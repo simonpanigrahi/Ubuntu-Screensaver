@@ -13,7 +13,7 @@
 
 ## The Problem
 
-Modern Ubuntu laptops (22.04+) run Wayland by default. If you step away while a download, compile, or long script is running, Ubuntu will:
+Modern Ubuntu laptops (22.04+) run Wayland by default . If you step away while a download, compile, or long script is running, Ubuntu will:
 
 - Lock your screen (requiring a password when you return)
 - Dim and blank your display
