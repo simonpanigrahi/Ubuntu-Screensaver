@@ -1,0 +1,14 @@
+pkgbase = oled-screensaver
+	pkgdesc = OLED-safe black screensaver for Ubuntu/GNOME (Wayland + X11)
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/simonpanigrahi/Ubuntu-Screensaver
+	arch = any
+	license = MIT
+	depends = bash
+	depends = python-gobject
+	depends = gtk3
+	source = oled-screensaver-1.0.0.tar.gz::https://github.com/simonpanigrahi/Ubuntu-Screensaver/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = oled-screensaver
