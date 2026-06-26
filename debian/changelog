@@ -1,0 +1,6 @@
+oled-screensaver (1.0.0) jammy; urgency=medium
+
+  * Initial release.
+  * Install OLED-safe screensaver as the `screensaver` command.
+
+ -- Simon Kenny Panigrahi <simonkp.live@gmail.com>  Sat, 27 Jun 2026 00:40:00 +0530

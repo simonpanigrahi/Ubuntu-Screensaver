@@ -1,0 +1,32 @@
+Source: oled-screensaver
+Section: utils
+Priority: optional
+Maintainer: Simon Kenny Panigrahi <simonkp.live@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/simonpanigrahi/Ubuntu-Screensaver
+Rules-Requires-Root: no
+
+Package: oled-screensaver
+Architecture: all
+Depends: ${misc:Depends},
+         bash,
+         python3-gi,
+         gir1.2-gtk-3.0
+Description: OLED-safe black screensaver for Ubuntu (Wayland + X11)
+ A lightweight, OLED-friendly black screensaver for modern Ubuntu/GNOME
+ desktops running Wayland or X11. It keeps long-running tasks (downloads,
+ builds, scripts) alive while you are away, without locking the screen.
+ .
+ Features:
+  * Pure black fullscreen window - OLED pixels are physically off,
+    giving near-zero power draw and zero burn-in risk.
+  * Status text drifts every few seconds to prevent static burn-in.
+  * Mouse cursor hidden while active.
+  * Screen lock, screensaver and dimming disabled while running.
+  * System suspend inhibited via systemd-inhibit so background work
+    is not killed.
+  * All GNOME power/lock settings are snapshotted and restored on exit.
+ .
+ Once installed, run the `screensaver` command and press ESC or click
+ anywhere to exit.
