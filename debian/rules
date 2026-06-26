@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# The repository ships a Makefile for end-users (manual install into
+# /usr/local). It must not drive the .deb build, so the auto build/
+# install/clean steps are neutralised and the binary is placed by hand.
+override_dh_auto_build:
+
+override_dh_auto_clean:
+
+override_dh_auto_install:
+
+override_dh_install:
+	install -D -m 0755 oled-safe.sh debian/oled-screensaver/usr/bin/screensaver

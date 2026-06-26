@@ -52,28 +52,53 @@ On top of that, if you have an OLED display, leaving any static content on scree
 
 ---
 
-## Usage
+## Installation
 
-**1. Download the script**
+### Install via PPA (Ubuntu / Debian)
+
+The easiest way on Ubuntu. Installs the `screensaver` command and pulls in its dependencies automatically.
 
 ```bash
-curl -O https://raw.githubusercontent.com/simonpanigrahi/Ubuntu-Screensaver/main/oled-safe.sh
+sudo add-apt-repository ppa:simonpanigrahi/screensaver
+sudo apt update
+sudo apt install oled-screensaver
 ```
 
-Or clone the repo:
+### Install via AUR (Arch Linux)
+
+```bash
+# with an AUR helper
+yay -S oled-screensaver
+
+# …or manually
+git clone https://aur.archlinux.org/oled-screensaver.git
+cd oled-screensaver
+makepkg -si
+```
+
+### Manual install (from source)
+
+Works on any distro that has `bash`, `python3-gi` (GTK 3) and `systemd`:
 
 ```bash
 git clone https://github.com/simonpanigrahi/Ubuntu-Screensaver.git
 cd Ubuntu-Screensaver
+sudo make install        # installs to /usr/local/bin/screensaver
 ```
 
-**2. Run it**
+Uninstall any time with `sudo make uninstall`.
+
+---
+
+## Usage
+
+Run it from anywhere:
 
 ```bash
-bash oled-safe.sh
+screensaver
 ```
 
-**3. Exit when you're back**
+**Exit when you're back**
 
 Press **`ESC`** or **click anywhere** on the black screen.  
 All your original settings are restored automatically.
@@ -83,7 +108,7 @@ All your original settings are restored automatically.
 ## How It Works
 
 ```
-bash oled-safe.sh
+screensaver
 │
 ├── Snapshots current GNOME power/lock settings via gsettings
 ├── Disables: idle timeout · screensaver · screen lock · screen dimming · sleep timeouts
@@ -117,7 +142,6 @@ Ideas for future improvements:
 - Configurable drift speed and label text
 - System tray indicator
 - `.desktop` file for GUI launch
-- AUR / PPA package
 
 ---
 
