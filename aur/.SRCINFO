@@ -9,6 +9,6 @@ pkgbase = oled-screensaver
 	depends = python-gobject
 	depends = gtk3
 	source = oled-screensaver-1.0.0.tar.gz::https://github.com/simonpanigrahi/Ubuntu-Screensaver/archive/refs/tags/v1.0.0.tar.gz
-	sha256sums = SKIP
+	sha256sums = e053473062f2ee9f57ec26f9d4952e349d5dd3addc791c45f7a798cf82a9f41e
 
 pkgname = oled-screensaver

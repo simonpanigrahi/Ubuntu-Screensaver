@@ -8,7 +8,7 @@ url="https://github.com/simonpanigrahi/Ubuntu-Screensaver"
 license=('MIT')
 depends=('bash' 'python-gobject' 'gtk3')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/simonpanigrahi/Ubuntu-Screensaver/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('e053473062f2ee9f57ec26f9d4952e349d5dd3addc791c45f7a798cf82a9f41e')
 
 package() {
     cd "$srcdir/Ubuntu-Screensaver-$pkgver"
