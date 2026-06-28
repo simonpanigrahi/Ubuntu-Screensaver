@@ -1,0 +1,24 @@
+# Debian / debhelper build artifacts
+debian/files
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/oled-screensaver/
+debian/*.substvars
+debian/*.log
+obj-*/
+
+# Package build outputs (normally land in the parent dir)
+*.deb
+*.ddeb
+*.dsc
+*.changes
+*.buildinfo
+*.build
+*.tar.xz
+*.tar.gz
+*.tar.zst
+
+# Editor / OS cruft
+*~
+.swp
+.DS_Store
